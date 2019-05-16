@@ -3,7 +3,7 @@
 'use strict';
 
 // Set up an empty cart for use on this page.
-var cart = new Cart([]);
+var cart = new Cart([],[]);
 
 // On screen load, we call this function to put all of the busmall options
 // (the things in the Product.allProducts array) into the drop down list.
@@ -30,22 +30,25 @@ function handleSubmit(event) {
 
 }
 
-var test = [];
 // TODO: Add the selected item and quantity to the cart
 function addSelectedItemToCart() {
   // TODO: suss out the item picked from the select list
   var selectedItem = document.getElementById('items').selectedIndex;
-  console.log(document.getElementsByTagName('option')[selectedItem].value);
+  var pickedItem = document.getElementsByTagName('option')[selectedItem].value;
+  console.log(pickedItem);
+
   // TODO: get the quantity
-  var selectedQuantity = document.getElementById('quantity');
-  console.log(selectedQuantity.value);
+  var selectedQuantity = document.getElementById('quantity').value;
+  console.log(selectedQuantity);
   // TODO: using those, add one item to the Cart
-  
-  test.push(selectedQuantity.value);
+  cart.items.push(pickedItem);
+  cart.quantity.push(selectedQuantity);
 }
 
 // TODO: Update the cart count in the header nav with the number of items in the Cart
-function updateCounter() {}
+function updateCounter() {
+  
+}
 
 // TODO: As you add items into the cart, show them (item & quantity) in the cart preview div
 function updateCartPreview() {
