@@ -1,1 +1,14 @@
 /* TODO: Make it awesome */
+body{
+    background: beige;
+}
+h1 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 2em;
+    text-align: center;
+}
+li{
+    display: inline;
+    text-align: center;
+    padding: 20px;
+}

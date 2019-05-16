@@ -26,7 +26,10 @@ function clearCart() {
 // TODO: Fill in the <tr>'s under the <tbody> for each item in the cart
 function showCart() {
 
+  }
+
   // TODO: Find the table body
+  
 
   // TODO: Iterate over the items in the cart
   // TODO: Create a TR
@@ -38,10 +41,18 @@ function showCart() {
 function removeItemFromCart(event) {
 
   // TODO: When a delete link is clicked, use cart.removeItem to remove the correct item
+  var removebutton = document.getElementById('removebutton');
   // TODO: Save the cart back to local storage
+  var productsFromLS = JSON.parse(localStorage.products);
   // TODO: Re-draw the cart table
-
+  for (var i = 0; i < products.allProducts.length; i++){
+    new Cart(productsFromLS[i].name);
+    products.allProducts[i].render();
+  }
 }
+
+removebutton.addEventListener('click', removeItemFromCart)
+
 
 // This will initialize the page and draw the cart on screen
 renderCart();
