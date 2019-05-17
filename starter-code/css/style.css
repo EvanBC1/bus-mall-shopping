@@ -1,24 +1,15 @@
-
-h1 {
-    background-color: rgb(9, 9, 117);
-    color: white;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 3em;
-    text-align: left;
-    letter-spacing: .1em;
-
+/* TODO: Make it awesome */
+body{
+    background: beige;
 }
-.card h1{
-    background-color: lavender;
+h1 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 2em;
     text-align: center;
-    font-weight: bold;
-
 }
 li{
-    
     display: inline;
     text-align: center;
     padding: 20px;
-
+}
 
