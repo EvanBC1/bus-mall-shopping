@@ -1,8 +1,4 @@
-/* TODO: Make it awesome */
-body{
-    background: white;
 
-}
 h1 {
     background-color: rgb(9, 9, 117);
     color: white;
@@ -24,8 +20,5 @@ li{
     display: inline;
     text-align: center;
     padding: 20px;
-}
-.div{
-    
-}
+
 
