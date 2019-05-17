@@ -46,7 +46,7 @@ function addSelectedItemToCart() {
   cart.items.push(pickedItem);
   cart.quantity.push(selectedQuantity);
   console.log(selectedQuantity);
-  cartCount += parseInt(selectedQuantity);
+  cartCount++;
   console.log(cartCount);
 }
 
